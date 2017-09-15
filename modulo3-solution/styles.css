@@ -1,0 +1,106 @@
+
+* {
+	box-sizing: border-box;
+  margin:0;
+
+}
+
+h1 {
+	margin-bottom: 50px;
+  margin-top: 80px;
+	font-family: Papyrus,fantasy;
+  font-size: 24px;
+	text-align: center;
+  font-weight: bold; 
+}
+
+/* Simple Responsive Framework. */
+
+
+.row {
+  width: 100%;
+}
+
+p{
+
+  font-weight: bold;
+  font-size: 20px;
+  border: 2px solid;
+  vertical-align: middle;
+  margin: 0px 0px 10px 0px;
+  width: 180px;
+  text-align: center;
+  float: right;
+
+}
+
+p.pink {
+  background-color: #ffd2d2;
+
+}
+
+p.red {
+  background-color: #ff5a36;
+
+}
+
+p.yellow {
+  background-color: #f3ed84;
+
+}
+
+
+section {
+  clear: right;
+  font-weight: bold;
+  margin: 3% 3% 2% 3%;
+}
+
+/********** Tamanho Desktop **********/
+@media (min-width: 992px) {
+    .col-lg-4 {
+    float: left;
+    width: 29.33%;
+    margin: 0% 2% 5% 2%;
+    border: 2px solid black;
+    background-color: #B3B9C0;
+
+
+  }
+
+}
+
+/********** Tamanho Tablet **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6, .col-md-12 {
+    float: left;
+    padding: 0px;
+    margin: 0% 2% 5% 2%;
+    border: 2px solid black;
+    background-color: #B3B9C0;
+
+  }
+
+  .col-md-6 {
+    width: 46%;
+  }
+
+  .col-md-12 {
+     width: 96%;
+  }
+}
+
+
+/********** Tamanho Smarthphone *********}*/
+@media (max-width: 767px) {
+    .col-sl-12 {
+    float: left;
+    padding: 0px;
+    margin: 0% 2% 5% 2%;
+    border: 2px solid black;
+    background-color: #B3B9C0;
+    width: 94%;
+
+  }
+}
+
