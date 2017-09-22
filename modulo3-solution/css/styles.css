@@ -1,10 +1,48 @@
 
 * {
   box-sizing: border-box;
-  margin:0;
   font-family: 'Roboto', sans-serif;
 
 }
+
+/** HEADER **/
+  #header-nav {
+    background-color: #B3B9C0;
+    border: 1px solid;
+    border-radius: 0;
+    width: 100%;
+  
+}
+
+.navbar-nav {
+  display: none;
+}
+
+
+
+.navbar .navbar-brand {
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+
+
+}
+
+#name {
+  margin-left: 25px;
+
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  border-color: black;
+  border: 10px;
+
+}
+
+/** END HEADER **/
+
+
+/* PRINCIPAL */
 
 h1 {
   margin-bottom: 50px;
@@ -14,39 +52,20 @@ h1 {
   font-weight: bold; 
 }
 
-/* Simple Responsive Framework. */
-
 
 .row {
-  width: 95%;
+  width: 100%;
 }
 
 
-p{
+p {
 
   font-weight: bold;
   font-size: 20px;
-  border: 2px solid;
-  vertical-align: middle;
-  margin: 0px 0px 10px 0px;
-  width: 180px;
+  margin: 10px 0px 5px 0px;
   text-align: center;
-  float: right;
+  
 
-}
-
-p.pink {
-  background-color: #ffd2d2;
-
-}
-
-p.red {
-  background-color: #ff5a36;
-
-}
-
-p.yellow {
-  background-color: #f3ed84;
 
 }
 
@@ -54,44 +73,53 @@ p.yellow {
 section {
   clear: right;
   font-weight: bold;
-  margin: 3% 3% 2% 3%;
+  margin: 3px 10px 2px 10px;
+  padding: 0px 10px 0px 10px;
 }
+
 
 
 
 /********** Medium Size (Desktop) **********/
 @media (min-width: 768px) {
-   .col-md-12 {
-    float: left;
-    padding: 0px;
-    margin: 0% 25% 5% 10%;
-    border: 2px solid black;
+   .col-lg-12, .col-md-12 {
+    padding: 3px;
+    margin: 1px 0px 2px 30px;
     background-color: #B3B9C0;
+    flex: 0 0 98%;
+    width: 100%;
 
   }
+
 }
 
 
   /********** Small Size (Tablet) **********/
 @media (min-width: 576px) and (max-width: 767px) {
     .col-sm-12 {
-    float: left;
-    padding: 0px;
-    margin: 0% 25% 5% 10%;
-    border: 2px solid black;
+    padding: 3px;
+    margin: 1px 0px 2px 40px;
     background-color: #B3B9C0;
+    flex: 0 0 94%;
+    width: 100%;
 
   }
 }
 
     /********** Extra Small Size (Smarthphone) **********/
 @media (max-width: 575px) {
-    .col-sl-12 {
-    float: left;
+    .col-10 {
     padding: 0px;
-    margin: 0% 25% 5% 10%;
-    border: 2px solid black;
+    margin: 1px 10px 2px 60px;
     background-color: #B3B9C0;
 
   }
+
+    #name {
+
+
+    }
 }
+
+
+/* END PRINCIPAL */
